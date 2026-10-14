@@ -65,39 +65,6 @@ ECG image ─> Preprocessing ─> R-peak detection ─> R-R intervals ─> HRV m
 
 > ⚠️ Only 1 of the 20 data points comes from a real patient ECG. The other 19 are synthetic, created to test whether the classifier and regression work end to end. The test split has just 4 samples, so these scores show the pipeline runs correctly, not that it is clinically accurate. Real patient data and cross-validation are the next step.
 
-## 📁 Project Structure
-
-```
-├── Cognitive_Monitoring_HRV_SVM_LR.ipynb   # Full pipeline notebook
-├── data/
-│   ├── rr_intervals.csv                    # Extracted R-R intervals
-│   └── SDNN&RMSSD.csv                      # HRV features (1 real patient + 19 synthetic)
-├── images/                                 # Sample (anonymized) ECG images
-├── requirements.txt
-└── README.md
-```
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-pip install -r requirements.txt
-jupyter notebook Cognitive_Monitoring_HRV_SVM_LR.ipynb
-```
-
-**requirements.txt**
-```
-numpy
-pandas
-opencv-python
-pillow
-matplotlib
-seaborn
-scipy
-scikit-learn
-```
-
 ## 🛠️ Tech Stack
 
 | Area | Tools |
